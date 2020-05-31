@@ -1,4 +1,6 @@
 language: python
+install:
+  - pip install beautifulsoup4
 script:
   - python jobstreet.py
   - python main.py
