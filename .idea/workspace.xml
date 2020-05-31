@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d66fd9cd-a906-4341-a42f-371f29a85018" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,10 +149,14 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/1920.23.1536.832/0.40.1920.1040@0.40.1920.1040" timestamp="1590751897826" />
-    <state x="656" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1590884995552">
+    <state x="656" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1590904862475">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/1920.-9.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1589455578853" />
-    <state x="656" y="384" key="com.intellij.ide.util.TipDialog/1920.23.1536.832/0.40.1920.1040@0.40.1920.1040" timestamp="1590884995552" />
+    <state x="656" y="384" key="com.intellij.ide.util.TipDialog/1920.23.1536.832/0.40.1920.1040@0.40.1920.1040" timestamp="1590904862475" />
+    <state x="623" y="265" key="search.everywhere.popup" timestamp="1590904872367">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="623" y="265" key="search.everywhere.popup/1920.23.1536.832/0.40.1920.1040@0.40.1920.1040" timestamp="1590904872367" />
   </component>
 </project>

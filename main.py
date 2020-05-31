@@ -5,8 +5,8 @@ import myGlobal
 import jobstreet as jb
 
 while True:
-    userInput = input("Please enter the key word to search")
-    #userInput = "Manager"
+    #userInput = input("Please enter the key word to search")
+    userInput = "Manager"
     soup = scraper.getBeautifulSoupInHtml(jb.getJobStreetUrl(userInput))
     data = jb.getJobSoupFromJobStreet(soup)
     #print(data)
