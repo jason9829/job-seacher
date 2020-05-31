@@ -1,5 +1,4 @@
 language: python
-before_script: cd job-searcher
 script:
   - python jobstreet.py
   - python main.py
