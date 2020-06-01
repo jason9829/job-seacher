@@ -1,3 +1,7 @@
+import url
+
+TOTAL_NUMBER_OF_JOBS_LOCATION = 4
+MAX_NUMBER_OF_JOBS_PER_PAGE = 20
 
 class JobStreetToken:
     def __init__(self):
@@ -27,3 +31,29 @@ def getJobSoupFromJobStreet(soup):
     soupList.jobLocation = soup.findAll("i", {"class": "icon icon-location"})
     soupList.jobPost = soup.findAll("span", {"class": "job-date-text text-muted"})
     return soupList
+
+
+# Desc: Get number of pages for job searched
+# Param: Job soup
+# Retval: Number of pages in int
+def getJobPostPages(soup):
+    temp = soup.findAll("span", {"class": "pull-right pagination-result-count"})
+    temp = temp[0].contents[0].split(" ")
+    noOfJobStr = temp[TOTAL_NUMBER_OF_JOBS_LOCATION]
+    noOfJobPages = int(noOfJobStr)/MAX_NUMBER_OF_JOBS_PER_PAGE
+    if isinstance(noOfJobPages, float):   # Float means extra pages
+        return int(noOfJobPages) + 1
+    else:
+        return int(noOfJobPages)
+
+
+# Desc: Change the url of the job searched to next page
+# Param: Job soup and current page
+# Retval: Url for next page
+def getNextPageUrl(soup, currentPage):
+    numOfJobPages = getJobPostPages(soup)
+    temp = soup.findAll("a", {"id": "page_next"})
+    if currentPage < numOfJobPages:  # If larger means it's error, if same means it's the last page
+        return url.changeUrlQueryValue(temp[0].attrs['href'], 'pg', currentPage + 1)
+    else:
+        raise ValueError('getNextPageUrl(): Invalid pages received!')

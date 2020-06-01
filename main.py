@@ -3,13 +3,14 @@
 import scraper
 import myGlobal
 import jobstreet as jb
+import url
 
     #userInput = input("Please enter the key word to search")
-userInput = "Manager"
+userInput = "Software Engineer"
 soup = scraper.getBeautifulSoupInHtml(jb.getJobStreetUrl(userInput))
 data = jb.getJobSoupFromJobStreet(soup)
-    #print(data)
-
+print('\nTotal Pages: ' + str(jb.getJobPostPages(soup)))
+print(jb.getNextPageUrl(soup, 2))
 i = 0
 temp = len(data.jobTitle)
 while temp != 0:
