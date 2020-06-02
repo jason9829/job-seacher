@@ -47,7 +47,7 @@ def getJobPostPages(soup):
         return int(noOfJobPages)
 
 
-# Desc: Change the url of the job searched to next page
+# Desc: Change the URL of the job search to next page
 # Param: Job soup and current page
 # Retval: Url for next page
 def getNextPageUrl(soup, currentPage):

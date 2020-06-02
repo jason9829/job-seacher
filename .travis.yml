@@ -7,3 +7,4 @@ script:
   - python url.py
   - python myGlobal.py
   - python scraper.py
+  - python test_url.py
