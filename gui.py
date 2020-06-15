@@ -1,47 +1,25 @@
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
+import tkinter as tk
+from tkinter import ttk
+
+global keywordTyped
+
+win = tk.Tk()
+win.title("Job Search by JLXW")
 
 
-class Form(QWidget):
-    def __init__(self, parent=None):
-        super(Form, self).__init__(parent)
+aLabel = ttk.Label(win, text="A Label")
+aLabel.grid(column=0, row=0)
 
-        nameLabel = QLabel("Name:")
-        self.nameLine = QLineEdit()
-        self.submitButton = QPushButton("Submit")
+def buttonClicked():
+    keywordTyped = str.get()
+    print(keywordTyped)
 
-        buttonLayout1 = QVBoxLayout()
-        buttonLayout1.addWidget(nameLabel)
-        buttonLayout1.addWidget(self.nameLine)
-        buttonLayout1.addWidget(self.submitButton)
+ttk.Label(win, text="Enter a keyword").grid(column=0, row=0)
 
-        self.submitButton.clicked.connect(self.submitContact)
+str= tk.StringVar()
+strTyped = ttk.Entry(win, width=12, textvariable=str)
+strTyped.grid(column=0, row=1)
 
-        mainLayout = QGridLayout()
-        # mainLayout.addWidget(nameLabel, 0, 0)
-        mainLayout.addLayout(buttonLayout1, 0, 1)
-
-        self.setLayout(mainLayout)
-        self.setWindowTitle("Hello Qt")
-
-    def submitContact(self):
-        name = self.nameLine.text()
-
-        if name == "":
-            QMessageBox.information(self, "Empty Field",
-                                    "Please enter a name and address.")
-            return
-        else:
-            QMessageBox.information(self, "Success!",
-                                    "Hello %s!" % name)
-
-
-if __name__ == '__main__':
-    import sys
-
-    app = QApplication(sys.argv)
-
-    screen = Form()
-    screen.show()
-
-    sys.exit(app.exec_())
+button = ttk.Button(win, text="Search", command=buttonClicked)
+button.grid(column=1, row=1)
+win.mainloop()
