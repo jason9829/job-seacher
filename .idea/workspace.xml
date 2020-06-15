@@ -4,8 +4,6 @@
     <list default="true" id="d66fd9cd-a906-4341-a42f-371f29a85018" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,9 +147,9 @@
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
+      <item itemvalue="Python.gui" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.main_no_gui" />
-      <item itemvalue="Python.gui" />
       <item itemvalue="Python tests.Unittests in test_jobstreet.py" />
       <item itemvalue="Python tests.Unittests in test_url.py" />
     </list>
@@ -255,10 +253,10 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/1920.23.1536.832/0.40.1920.1040@0.40.1920.1040" timestamp="1590751897826" />
-    <state x="656" y="385" key="com.intellij.ide.util.TipDialog" timestamp="1592216428008">
+    <state x="656" y="385" key="com.intellij.ide.util.TipDialog" timestamp="1592218642517">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="656" y="385" key="com.intellij.ide.util.TipDialog/-1920.32.1536.832/0.40.1920.1040@0.40.1920.1040" timestamp="1592216428008" />
+    <state x="656" y="385" key="com.intellij.ide.util.TipDialog/-1920.32.1536.832/0.40.1920.1040@0.40.1920.1040" timestamp="1592218642517" />
     <state x="525" y="313" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1591519736468" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/1920.-9.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1589455578853" />
     <state x="656" y="384" key="com.intellij.ide.util.TipDialog/1920.23.1536.832/0.40.1920.1040@0.40.1920.1040" timestamp="1591078172818" />
