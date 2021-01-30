@@ -12,4 +12,4 @@ def getBeautifulSoupInHtml(url):
     hdr = {'User-Agent': 'Mozilla/5.0'}
     req = Request(site, headers=hdr)
     page = urlopen(req)
-    return BeautifulSoup(page, 'html')
+    return BeautifulSoup(page, 'html.parser')
