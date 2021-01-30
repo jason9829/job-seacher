@@ -8,11 +8,16 @@ soup = BeautifulSoup(source, 'lxml')
 article = soup.find('article')
 job_title = article.div.div.div.div.h1.a.div.text
 company =  article.div.div.div.span.text
-salary = article.div.div.div.span['text']
+time = article.div.div.div.time.text
+#category = article.div.div.div.div.div.text
+category = article.find('dd').text
+location = article.find('span', class_='FYwKg _1GAuD C6ZIU_6 _1_nER_6 _27Shq_6 sQuda_6').text
 
 print(job_title)
 print(company)
-print(salary)
+print(category)
+print(time)
+print(location)
 
 """
 Html sample job card
