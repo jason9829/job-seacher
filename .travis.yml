@@ -2,7 +2,6 @@ language: python
 install:
   - pip install beautifulsoup4
 script:
-  - python main_no_gui.py
   - python jobstreet.py
   - python url.py
   - python myGlobal.py
