@@ -11,13 +11,14 @@ company =  article.div.div.div.span.text
 time = article.div.div.div.time.text
 #category = article.div.div.div.div.div.text
 category = article.find('dd').text
-location = article.find('span', class_='FYwKg _1GAuD C6ZIU_6 _1_nER_6 _27Shq_6 sQuda_6').text
+location = article.find_all('span', class_='FYwKg _1GAuD C6ZIU_6 _1_nER_6 _27Shq_6 sQuda_6')
 
 print(job_title)
 print(company)
 print(category)
 print(time)
-print(location)
+print(location[0].text)
+print(location[1].text)
 
 """
 Html sample job card
