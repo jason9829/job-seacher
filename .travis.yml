@@ -8,4 +8,3 @@ script:
   - python myGlobal.py
   - python scraper.py
   - python test_url.py
-  - python test_jobstreet.py
