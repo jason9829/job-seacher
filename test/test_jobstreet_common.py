@@ -7,6 +7,7 @@ sys.path.insert(0, ROOT_DIR)
 
 from src.jobstreet_common import JobStreet
 
+
 class TestJobStreet(unittest.TestCase):
     def test_is_salary_given_expected_salary_string(self):
         self.assertEqual(True, JobStreet.is_salary('MYR'))

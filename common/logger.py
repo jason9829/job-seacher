@@ -8,10 +8,11 @@ import datetime
 import os
 import sys
 
-
 ROOT_DIR = os.path.normpath(os.path.join(os.path.abspath(__file__), "..", ".."))
 REPO_NAME = os.path.basename(ROOT_DIR)
 sys.path.insert(0, ROOT_DIR)
+
+from common.file_manager import FileManager
 
 root_logger = logging.getLogger()
 default_format = '%(asctime)s %(levelname)-10s %(filename)-20s %(message)-1s'
@@ -22,6 +23,7 @@ class Logger():
     def __init__(self, filename=REPO_NAME, file_suffix='.log', path=os.path.join(ROOT_DIR, 'log')):
         self.filename = filename + file_suffix
         self.path = os.path.join(path, self.filename)
+        FileManager.create_dir_if_not_exist(path)
         logging.basicConfig(
             format=default_format,
             level=logging.INFO,
