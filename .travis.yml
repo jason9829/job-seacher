@@ -2,8 +2,8 @@ language: python
 install:
   - pip install beautifulsoup4
 script:
-  - python jobstreet.py
-  - python url.py
-  - python myGlobal.py
-  - python scraper.py
-  - python test_url.py
+  - python src/jobstreet.py
+  - python src/url.py
+  - python common/myGlobal.py
+  - python src/scraper.py
+  - python test/test_url.py

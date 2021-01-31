@@ -11,7 +11,7 @@ import sys
 
 ROOT_DIR = os.path.normpath(os.path.join(os.path.abspath(__file__), "..", ".."))
 REPO_NAME = os.path.basename(ROOT_DIR)
-sys.path.insert(0, ROOT_DIR)  
+sys.path.insert(0, ROOT_DIR)
 
 root_logger = logging.getLogger()
 default_format = '%(asctime)s %(levelname)-10s %(filename)-20s %(message)-1s'

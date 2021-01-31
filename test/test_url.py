@@ -1,5 +1,11 @@
 import unittest
-import url
+import os
+import sys
+
+ROOT_DIR = os.path.normpath(os.path.join(os.path.abspath(__file__), "..", ".."))
+sys.path.insert(0, ROOT_DIR)
+
+import src.url as url
 
 
 class TestCaseChangeUrlQueryValue(unittest.TestCase):
