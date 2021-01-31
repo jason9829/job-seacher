@@ -5,7 +5,7 @@ import sys
 ROOT_DIR = os.path.normpath(os.path.join(os.path.abspath(__file__), "..", ".."))
 sys.path.insert(0, ROOT_DIR)
 
-import src.jobstreet_common as JobStreet
+from src.jobstreet_common import JobStreet
 
 class TestJobStreet(unittest.TestCase):
     def test_is_salary_given_expected_salary_string(self):
