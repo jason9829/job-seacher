@@ -7,3 +7,4 @@ script:
   - python common/myGlobal.py
   - python src/scraper.py
   - python test/test_url.py
+  - python test/test_jobstreet_common.py
