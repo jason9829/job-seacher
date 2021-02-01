@@ -1,5 +1,6 @@
 """
-A context manager 'Tee' class
+A context manager 'Tee' class to redirect print message
+to console and file
 Source: https://stackoverflow.com/a/57008707
 """
 import sys

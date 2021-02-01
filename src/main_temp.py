@@ -1,6 +1,12 @@
 # This file is used to test/ prototype functions
+import os
+import sys
+
+ROOT_DIR = os.path.normpath(os.path.join(os.path.abspath(__file__), "..", ".."))
+sys.path.insert(0, ROOT_DIR)
+
 import scraper
-import myGlobal
+from common import myGlobal
 import jobstreet as jb
 
 #keywordTyped = input()
